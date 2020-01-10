@@ -1,0 +1,21 @@
+{
+  "name": "node1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "start": "node index.js"
+  },
+  "author": "NHT",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "socket",
+    "p5.js",
+    "node"
+  ]
+}
