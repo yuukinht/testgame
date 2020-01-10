@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var server = app.listen(Number(process.env.PORT || 2567) + Number(process.env.NODE_APP_INSTANCE || 0));
+var server = app.listen(process.env.PORT || 3000);
 
 app.use(express.static('public'));
 var io = require('socket.io')(server);
