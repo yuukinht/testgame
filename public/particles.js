@@ -109,7 +109,10 @@ window.addEventListener("keyup", function (e) {
 	} else if (e.which === 37) {
 		state.l=false;//left
 	}
-});	
+});
+window.onblur = function () { 
+  state.u=false;state.d=false;state.r=false;state.l=false;	
+};
 function playerDraw(data){
 	colorMode(HSB, 255);	
 	var name = data.name;
