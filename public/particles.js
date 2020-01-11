@@ -155,8 +155,8 @@ function bulletDrawOther(){
 }
 function bulletUpdate(){
 	for(var i=0;i<bullet.length;i++){
-		bullet[i].posX += bullet[i].motionX*2;
-		bullet[i].posY += bullet[i].motionY*2;
+		bullet[i].posX += bullet[i].motionX*5;
+		bullet[i].posY += bullet[i].motionY*5;
 		if((bullet[i].posX<0)||(bullet[i].posX>width)||(bullet[i].posY<0)||(bullet[i].posY>height)){
 			bullet.splice(i,1);
 		}
