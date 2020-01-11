@@ -5,10 +5,11 @@ var bullet = [];
 var otherbullet = {};
 var playerSize = 30;
 var socket;
-var username = prompt("Nhập Tên :");
+//var username = prompt("Nhập Tên :");
 var maxX = 880;
 var maxY = 540;
 var clr = getRandomInt(255);
+var username = clr;
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
