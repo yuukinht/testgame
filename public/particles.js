@@ -5,9 +5,10 @@ var bullet = [];
 var otherbullet = {};
 var playerSize = 30;
 var socket;
-var username = getRandomInt(255);
+var username = prompt("Nhập Tên :");
 var maxX = 880;
 var maxY = 540;
+var clr = getRandomInt(255);
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
@@ -39,12 +40,12 @@ function setup() {
 function newPlayer(){
 	var player = {
 		name:username,
-		posX:getRandomInt(maxX+30)-60,
-		posY:getRandomInt(maxY+30)-60,
+		posX:getRandomInt(maxX-60)+30,
+		posY:getRandomInt(maxY-60)+30,
 		motionX:0,
 		motionY:0,
 		heal:20,
-		color: username
+		color: clr
 	}
 	return player;
 }
