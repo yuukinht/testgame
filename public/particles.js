@@ -20,8 +20,8 @@ function setup() {
     frameRate(60);
 	strokeWeight(1);
 	stroke(0);	
-	//socket = io();
-	socket = io.connect('http://localhost');
+	socket = io();
+	//socket = io.connect('http://localhost');
 	socket.emit('setUsername',{name:username});
     socket.on('other', function(data) {
 		var no = data.id;
