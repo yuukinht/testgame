@@ -185,6 +185,7 @@ function dameUpdate(){
 			var dis = createVector(bx,by).dist(createVector(px,py));
 			if (dis<=15){
 				player.heal -=1;
+				otherbullet[key].splice(i,1);
 				if(player.heal<1){
 					player = newPlayer();
 				}
