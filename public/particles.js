@@ -21,7 +21,7 @@ function setup() {
 	strokeWeight(1);
 	stroke(0);	
 	//socket = io();
-	socket = io.connect('ws://localhost');
+	socket = io.connect('http://localhost');
 	socket.emit('setUsername',{name:username});
     socket.on('other', function(data) {
 		var no = data.id;
