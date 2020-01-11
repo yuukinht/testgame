@@ -51,6 +51,7 @@ function newPlayer(){
 	return player;
 }
 function mousePressed(){
+	if (bullet.length<5){
 	var pos = createVector(player.posX,player.posY);
 	var mouse = createVector(mouseX,mouseY);
 	var dis = mouse.dist(pos);
@@ -64,6 +65,7 @@ function mousePressed(){
 		color:player.color		
 	}
 	bullet.push(bl);
+	}
 }
 function draw() {
 	clear();
